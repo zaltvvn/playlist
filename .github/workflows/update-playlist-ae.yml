@@ -12,11 +12,11 @@ jobs:
       contents: write
 
     steps:
-      # 1. Checkout repo 'playlist' (công khai) vào thư mục gốc
+      # Bước 1: Lấy repo playlist (Public) vào thư mục gốc để giữ chuẩn Git
       - name: Checkout Playlist Repo
         uses: actions/checkout@v3
 
-      # 2. Checkout repo 'backup' (Private) vào thư mục 'backup'
+      # Bước 2: Lấy repo backup (Private) vào thư mục tên là 'backup'
       - name: Checkout Backup Repo
         uses: actions/checkout@v3
         with:
@@ -24,6 +24,7 @@ jobs:
           token: ${{ secrets.ENGINE_TOKEN }}
           path: backup
 
+      # Bước 3: Cài đặt Python và thư viện
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -32,20 +33,28 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      # 3. Chạy Script (Script này sẽ tạo ra thư mục 'output/playlist_ae.m3u')
+      # Bước 4: Chạy Code Python (File playlist_ae.m3u sẽ được sinh ra ở thư mục gốc)
       - name: Run Script
         run: python backup/get-playlist-ae.py
 
-      # 4. Bước KIỂM TRA (Để bạn xem trong Log có file chưa)
-      - name: Check output file
-        run: ls -R output/
+      # Bước 5: Tạo thư mục chứa riêng file m3u để chuẩn bị deploy
+      - name: Prepare Output Folder
+        run: |
+          mkdir -p final_output
+          if [ -f "playlist_ae.m3u" ]; then
+            mv playlist_ae.m3u final_output/
+            echo "✅ Đã gom file m3u thành công!"
+          else
+            echo "❌ LỖI: Không tìm thấy file m3u sau khi chạy script!"
+            exit 1
+          fi
 
-      # 5. Đẩy DUY NHẤT thư mục 'output' lên nhánh m3u
+      # Bước 6: Đẩy DUY NHẤT thư mục final_output lên nhánh m3u
       - name: Deploy to m3u Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ENGINE_TOKEN }}
           publish_branch: m3u
-          publish_dir: ./output  # <--- Chỉ đẩy nội dung trong thư mục output
-          keep_files: false
-          commit_message: "Auto update playlist: playlist_ae.m3u $(date)"
+          publish_dir: ./final_output
+          keep_files: false # Luôn dọn dẹp file cũ trên nhánh m3u trước khi đẩy cái mới lên
+          commit_message: "Auto Update: playlist_ae.m3u $(date)"
