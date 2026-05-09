@@ -1,9 +1,9 @@
-name: Update M3U AE
+name: Update M3U to Branch m3u
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # 6 tiếng chạy 1 lần
-  workflow_dispatch:      # Chạy thủ công
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   deploy-playlist:
@@ -12,8 +12,20 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout Source
+      # 1. Checkout repository hiện tại (playlist) để lấy môi trường
+      - name: Checkout Playlist Repo
         uses: actions/checkout@v3
+        with:
+          path: main_repo
+
+      # 2. Checkout repository chứa code Python (backup)
+      # Nếu repo 'backup' là Private, GitHub sẽ dùng ENGINE_TOKEN để tải
+      - name: Checkout Backup Repo
+        uses: actions/checkout@v3
+        with:
+          repository: zaltvvn/backup
+          token: ${{ secrets.ENGINE_TOKEN }}
+          path: backup
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -23,22 +35,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # 3. Chạy Script (Lúc này file nằm trong thư mục python_scripts)
       - name: Run Script
         run: python backup/get-playlist-ae.py
         
+      # 4. Đẩy file playlist_updated.m3u sang nhánh m3u
       - name: Deploy to m3u Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # Sử dụng Secret ENGINE_TOKEN của bạn
           github_token: ${{ secrets.ENGINE_TOKEN }}
-          
-          # Đưa vào nhánh m3u
           publish_branch: m3u
-          
-          # Chỉ lấy file m3u vừa tạo
           publish_dir: ./
           keep_files: false
-          commit_message: "Auto update live channels with VLC UA $(date)"
-          
-          # Loại bỏ các file code và cấu hình khỏi nhánh m3u
-          exclude_assets: ".*,*.yml,backup/*,playlist/*"
+          commit_message: "Auto update live channels $(date)"
+          # Loại bỏ các thư mục repo vừa tải về để tránh đẩy ngược lên nhánh m3u
+          exclude_assets: "python_scripts/**,main_repo/**,.*,*.yml"
