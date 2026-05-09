@@ -64,4 +64,4 @@ jobs:
           publish_dir: ./final_output
           keep_files: false 
           force_orphan: true # <--- CHỈ CẦN THÊM DÒNG NÀY
-          commit_message: "Auto Update: All Playlists $(date)"
+          commit_message: "Auto Update: All Playlists - Cập nhật lúc ${{ env.NOW }}"
