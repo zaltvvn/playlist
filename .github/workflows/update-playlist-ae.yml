@@ -1,0 +1,44 @@
+name: Update M3U AE
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # 6 tiếng chạy 1 lần
+  workflow_dispatch:      # Chạy thủ công
+
+jobs:
+  deploy-playlist:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Script
+        run: python backup/get-playlist-ae.py
+        
+      - name: Deploy to m3u Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # Sử dụng Secret ENGINE_TOKEN của bạn
+          github_token: ${{ secrets.ENGINE_TOKEN }}
+          
+          # Đưa vào nhánh m3u
+          publish_branch: m3u
+          
+          # Chỉ lấy file m3u vừa tạo
+          publish_dir: ./
+          keep_files: false
+          commit_message: "Auto update live channels with VLC UA $(date)"
+          
+          # Loại bỏ các file code và cấu hình khỏi nhánh m3u
+          exclude_assets: ".*,*.yml,backup/*,playlist/*"
