@@ -12,14 +12,11 @@ jobs:
       contents: write
 
     steps:
-      # 1. Checkout repository hiện tại (playlist) để lấy môi trường
+      # 1. Checkout repo 'playlist' (công khai) vào thư mục gốc
       - name: Checkout Playlist Repo
         uses: actions/checkout@v3
-        with:
-          path: main_repo
 
-      # 2. Checkout repository chứa code Python (backup)
-      # Nếu repo 'backup' là Private, GitHub sẽ dùng ENGINE_TOKEN để tải
+      # 2. Checkout repo 'backup' (Private) vào thư mục 'backup'
       - name: Checkout Backup Repo
         uses: actions/checkout@v3
         with:
@@ -35,18 +32,20 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      # 3. Chạy Script (Lúc này file nằm trong thư mục python_scripts)
+      # 3. Chạy Script (Script này sẽ tạo ra thư mục 'output/playlist_ae.m3u')
       - name: Run Script
         run: python backup/get-playlist-ae.py
-        
-      # 4. Đẩy file playlist_updated.m3u sang nhánh m3u
+
+      # 4. Bước KIỂM TRA (Để bạn xem trong Log có file chưa)
+      - name: Check output file
+        run: ls -R output/
+
+      # 5. Đẩy DUY NHẤT thư mục 'output' lên nhánh m3u
       - name: Deploy to m3u Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ENGINE_TOKEN }}
           publish_branch: m3u
-          publish_dir: ./
+          publish_dir: ./output  # <--- Chỉ đẩy nội dung trong thư mục output
           keep_files: false
-          commit_message: "Auto update live channels $(date)"
-          # Loại bỏ các thư mục repo vừa tải về để tránh đẩy ngược lên nhánh m3u
-          exclude_assets: "python_scripts/**,main_repo/**,.*,*.yml"
+          commit_message: "Auto update playlist: playlist_ae.m3u $(date)"
