@@ -35,7 +35,7 @@ jobs:
 
       # Bước 4: Chạy Code Python (File playlist_ae.m3u sẽ được sinh ra ở thư mục gốc)
       - name: Run Script
-        run: python backup/get-playlist-ae.py
+        run: python backup/get-playlist-in.py
 
       # Bước 5: Tạo thư mục chứa riêng file m3u để chuẩn bị deploy
       - name: Prepare Output Folder
