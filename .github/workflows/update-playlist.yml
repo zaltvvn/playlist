@@ -55,21 +55,17 @@ jobs:
             echo "⚠️ Không tìm thấy file IN!"
           fi
 
-      # -----------------------------------------------------------
-      # BƯỚC MỚI: Tính toán ngày giờ VN và lưu vào biến GITHUB_ENV
-      # -----------------------------------------------------------
+     # Bước mới: Lấy giờ VN (đã làm ở bước trước)
       - name: Get Current Time
-        run: echo "TIME_NOW=$(TZ='Asia/Ho_Chi_Minh' date +'%d/%m %H:%M')"
+        run: echo "TIME_NOW=$(TZ='Asia/Ho_Chi_Minh' date +'%d/%m %H:%M')" >> $GITHUB_ENV
 
-      # -----------------------------------------------------------
-      # BƯỚC DEPLOY: Gọi biến thời gian ra bằng ${{ env.TIME_NOW }}
-      # -----------------------------------------------------------
-      - name: Deploy to m3u Branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.ENGINE_TOKEN }}
-          publish_branch: m3u
-          publish_dir: ./final_output
-          keep_files: false 
-          force_orphan: true
-          commit_message: "Auto Update: All Playlists - Cập nhật lúc ${{ env.TIME_NOW }}"
+      # Bước Deploy thủ công: Thay thế hoàn toàn peaceiris/actions-gh-pages
+      - name: Manual Deploy to m3u Branch
+        run: |
+          cd final_output
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto Update: All Playlists - Cập nhật lúc ${{ env.TIME_NOW }}"
+          git push --force "https://x-access-token:${{ secrets.ENGINE_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:m3u
