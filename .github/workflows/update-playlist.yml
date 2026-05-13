@@ -59,7 +59,7 @@ jobs:
       # BƯỚC MỚI: Tính toán ngày giờ VN và lưu vào biến GITHUB_ENV
       # -----------------------------------------------------------
       - name: Get Current Time
-        run: echo "TIME_NOW=$(TZ='Asia/Ho_Chi_Minh' date +'%d/%m %H:%M')" >> $GITHUB_ENV
+        run: echo "TIME_NOW=$(TZ='Asia/Ho_Chi_Minh' date +'%d/%m %H:%M')"
 
       # -----------------------------------------------------------
       # BƯỚC DEPLOY: Gọi biến thời gian ra bằng ${{ env.TIME_NOW }}
