@@ -1,0 +1,319 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ADNatGeoHD" group-title="-",AD Nat Geo HD
+http://77.137.40.221:8000/play/z03i
+#EXTINF:-1 tvg-id="ADSport1HD" group-title="-",AD Sport 1 HD
+http://77.137.40.221:8000/play/z03f
+#EXTINF:-1 tvg-id="ADSport2HD" group-title="-",AD Sport 2 HD
+http://77.137.40.221:8000/play/z03g
+#EXTINF:-1 tvg-id="AJMANHD" group-title="-",AJMAN HD
+http://77.137.40.221:8000/play/a042
+#EXTINF:-1 tvg-id="ALJOMHORIAYEMENTV" group-title="-",AL JOMHORIA YEMEN TV
+http://77.137.40.221:8000/play/a031
+#EXTINF:-1 tvg-id="ALNADATV" group-title="-",AL NADA TV
+http://77.137.40.221:8000/play/a03a
+#EXTINF:-1 tvg-id="ALSABAH" group-title="-",AL SABAH
+http://77.137.40.221:8000/play/l02i
+#EXTINF:-1 tvg-id="ALShams" group-title="-",AL Shams
+http://77.137.40.221:8000/play/a02s
+#EXTINF:-1 tvg-id="AL-Anbar" group-title="-",AL-Anbar
+http://77.137.40.221:8000/play/a03b
+#EXTINF:-1 tvg-id="ALJADEEDTVHD" group-title="-",ALJADEED TV HD
+http://77.137.40.221:8000/play/um1x
+#EXTINF:-1 tvg-id="ALMAYADEENPLUS" group-title="-",ALMAYADEEN PLUS
+http://77.137.40.221:8000/play/l04h
+#EXTINF:-1 tvg-id="AbuDhabiTVHD" group-title="-",Abu Dhabi TV HD
+http://77.137.40.221:8000/play/z03c
+#EXTINF:-1 tvg-id="Aghani" group-title="-",Aghani
+http://77.137.40.221:8000/play/l021
+#EXTINF:-1 tvg-id="AlArabiya" group-title="-",Al Arabiya
+http://77.137.40.221:8000/play/e024
+#EXTINF:-1 tvg-id="AlArabiyaBusiness" group-title="-",Al Arabiya Business
+http://77.137.40.221:8000/play/e02c
+#EXTINF:-1 tvg-id="AlEmaratTVHD" group-title="-",Al Emarat TV HD
+http://77.137.40.221:8000/play/a03d
+#EXTINF:-1 tvg-id="AlHadath" group-title="-",Al Hadath
+http://77.137.40.221:8000/play/a023
+#EXTINF:-1 tvg-id="AlJazeeraDocumentaryHD" group-title="-",Al Jazeera Documentary HD
+http://77.137.40.221:8000/play/f04r
+#EXTINF:-1 tvg-id="AlJazeeraEnglishHD" group-title="-",Al Jazeera English HD
+http://77.137.40.221:8000/play/f04q
+#EXTINF:-1 tvg-id="AlJazeeraHD" group-title="-",Al Jazeera HD
+http://77.137.40.221:8000/play/f04n
+#EXTINF:-1 tvg-id="AlJazeeraMubasher2HD" group-title="-",Al Jazeera Mubasher 2 HD
+http://77.137.40.221:8000/play/f04p
+#EXTINF:-1 tvg-id="AlJazeeraMubasherHD" group-title="-",Al Jazeera Mubasher HD
+http://77.137.40.221:8000/play/f04o
+#EXTINF:-1 tvg-id="AlMasryiaHD" group-title="-",Al Masryia HD
+http://77.137.40.221:8000/play/a032
+#EXTINF:-1 tvg-id="AlNas" group-title="-",Al Nas
+http://77.137.40.221:8000/play/l039
+#EXTINF:-1 tvg-id="AlRayyanAlQadeemHD" group-title="-",Al Rayyan Al Qadeem HD
+http://77.137.40.221:8000/play/a04t
+#EXTINF:-1 tvg-id="AlRayyanHD" group-title="-",Al Rayyan HD
+http://77.137.40.221:8000/play/a04s
+#EXTINF:-1 tvg-id="Al-NaharDrama" group-title="-",Al-Nahar Drama
+http://77.137.40.221:8000/play/a052
+#EXTINF:-1 tvg-id="Al-NaharOne" group-title="-",Al-Nahar One
+http://77.137.40.221:8000/play/a051
+#EXTINF:-1 tvg-id="AlBald-Alamwaj" group-title="-",AlBald-Alamwaj
+http://77.137.40.221:8000/play/l00o
+#EXTINF:-1 tvg-id="AlHadathAlyoum" group-title="-",AlHadath Alyoum
+http://77.137.40.221:8000/play/a02h
+#EXTINF:-1 tvg-id="Alamwaj1HD" group-title="-",Alamwaj 1 HD
+http://77.137.40.221:8000/play/a014
+#EXTINF:-1 tvg-id="Alamwaj2HD" group-title="-",Alamwaj 2 HD
+http://77.137.40.221:8000/play/a015
+#EXTINF:-1 tvg-id="AlamwajMovies1" group-title="-",AlamwajMovies1
+http://77.137.40.221:8000/play/a00p
+#EXTINF:-1 tvg-id="AlamwajMovies2" group-title="-",AlamwajMovies2
+http://77.137.40.221:8000/play/a00q
+#EXTINF:-1 tvg-id="AlatawlaHekayat" group-title="-",Alatawla Hekayat
+http://77.137.40.221:8000/play/a04i
+#EXTINF:-1 tvg-id="AlhayatMuslsalat" group-title="-",Alhayat Muslsalat
+http://77.137.40.221:8000/play/a057
+#EXTINF:-1 tvg-id="AlhurraHD" group-title="-",Alhurra HD
+http://77.137.40.221:8000/play/l04a
+#EXTINF:-1 tvg-id="AlmagdTV" group-title="-",Almagd TV
+http://77.137.40.221:8000/play/a04k
+#EXTINF:-1 tvg-id="AlmamlakaTV" group-title="-",Almamlaka TV
+http://77.137.40.221:8000/play/a040
+#EXTINF:-1 tvg-id="Alsay3da" group-title="-",Alsay3da
+http://77.137.40.221:8000/play/a04l
+#EXTINF:-1 tvg-id="Althanya" group-title="-",Althanya
+http://77.137.40.221:8000/play/a034
+#EXTINF:-1 tvg-id="AmmanTV" group-title="-",Amman TV
+http://77.137.40.221:8000/play/l03v
+#EXTINF:-1 tvg-id="Animal_Planet_HD" group-title="-",Animal_Planet_HD
+http://77.137.40.221:8000/play/a00l
+#EXTINF:-1 tvg-id="Arabica" group-title="-",Arabica
+http://77.137.40.221:8000/play/l020
+#EXTINF:-1 tvg-id="BEINMOVIES1HD" group-title="-",BEIN MOVIES 1 HD
+http://77.137.40.221:8000/play/tjf1
+#EXTINF:-1 tvg-id="BEINMOVIES2HD" group-title="-",BEIN MOVIES 2 HD
+http://77.137.40.221:8000/play/tjf2
+#EXTINF:-1 tvg-id="BEINMOVIES3HD" group-title="-",BEIN MOVIES 3 HD
+http://77.137.40.221:8000/play/tjf3
+#EXTINF:-1 tvg-id="BEINSPORT1HD" group-title="-",BEIN SPORT 1 HD
+http://77.137.40.221:8000/play/tjf4
+#EXTINF:-1 tvg-id="BEINSPORT2HD" group-title="-",BEIN SPORT 2 HD
+http://77.137.40.221:8000/play/tjf5
+#EXTINF:-1 tvg-id="BEINSPORT3HD" group-title="-",BEIN SPORT 3 HD
+http://77.137.40.221:8000/play/tjf16
+#EXTINF:-1 tvg-id="BEINSPORT4HD" group-title="-",BEIN SPORT 4 HD
+http://77.137.40.221:8000/play/tjf7
+#EXTINF:-1 tvg-id="BEINSPORT5HD" group-title="-",BEIN SPORT 5 HD
+http://77.137.40.221:8000/play/tjf8
+#EXTINF:-1 tvg-id="BEINSPORT6HD" group-title="-",BEIN SPORT 6 HD
+http://77.137.40.221:8000/play/tjf9
+#EXTINF:-1 tvg-id="BaynounahTV" group-title="-",Baynounah TV
+http://77.137.40.221:8000/play/a03j
+#EXTINF:-1 tvg-id="CBC" group-title="-",CBC
+http://77.137.40.221:8000/play/a053
+#EXTINF:-1 tvg-id="CBCDrama" group-title="-",CBC Drama
+http://77.137.40.221:8000/play/l055
+#EXTINF:-1 tvg-id="CBCSofra" group-title="-",CBC Sofra
+http://77.137.40.221:8000/play/a054
+#EXTINF:-1 tvg-id="CHKeshet12HD" group-title="-",CH Keshet 12 HD
+http://77.137.40.221:8000/play/t017
+#EXTINF:-1 tvg-id="CHReshet13HD" group-title="-",CH Reshet 13 HD
+http://77.137.40.221:8000/play/t018
+#EXTINF:-1 tvg-id="CNARABIA" group-title="-",CN ARABIA
+http://77.137.40.221:8000/play/l02r
+#EXTINF:-1 tvg-id="DUBAIRACING1HD" group-title="-",DUBAI RACING 1 HD
+http://77.137.40.221:8000/play/k04z
+#EXTINF:-1 tvg-id="DUBAIRACING2HD" group-title="-",DUBAI RACING 2 HD
+http://77.137.40.221:8000/play/k050
+#EXTINF:-1 tvg-id="DUBAISPORTS1HD" group-title="-",DUBAI SPORTS 1 HD
+http://77.137.40.221:8000/play/k04x
+#EXTINF:-1 tvg-id="DUBAISPORTS2HD" group-title="-",DUBAI SPORTS 2 HD
+http://77.137.40.221:8000/play/k04y
+#EXTINF:-1 tvg-id="DijlahTVHD" group-title="-",Dijlah TV HD
+http://77.137.40.221:8000/play/a043
+#EXTINF:-1 tvg-id="Discovery_HD" group-title="-",Discovery_HD
+http://77.137.40.221:8000/play/a00j
+#EXTINF:-1 tvg-id="DisneyChannelHD" group-title="-",Disney Channel HD
+http://77.137.40.221:8000/play/t01s
+#EXTINF:-1 tvg-id="DubaiOneHD" group-title="-",Dubai One HD
+http://77.137.40.221:8000/play/k04w
+#EXTINF:-1 tvg-id="DubaiTVHD" group-title="-",Dubai TV HD
+http://77.137.40.221:8000/play/k04u
+#EXTINF:-1 tvg-id="EgyptianTVHD" group-title="-",Egyptian TV HD
+http://77.137.40.221:8000/play/a02f
+#EXTINF:-1 tvg-id="ExtraNews" group-title="-",Extra News
+http://77.137.40.221:8000/play/a056
+#EXTINF:-1 tvg-id="HYA" group-title="-",HYA
+http://77.137.40.221:8000/play/a05a
+#EXTINF:-1 tvg-id="HawaBaghdadDrama" group-title="-",Hawa Baghdad Drama
+http://77.137.40.221:8000/play/a04j
+#EXTINF:-1 tvg-id="History_Channel_HD" group-title="-",History_Channel_HD
+http://77.137.40.221:8000/play/t00m
+#EXTINF:-1 tvg-id="INEWSTVHD" group-title="-",INEWS TV HD
+http://77.137.40.221:8000/play/a049
+#EXTINF:-1 tvg-id="JordanHD" group-title="-",Jordan HD
+http://77.137.40.221:8000/play/a03y
+#EXTINF:-1 tvg-id="KAN11HD" group-title="-",KAN 11 HD
+http://77.137.40.221:8000/play/a05b
+#EXTINF:-1 tvg-id="KARBALATVHD" group-title="-",KARBALA TV HD
+http://77.137.40.221:8000/play/a048
+#EXTINF:-1 tvg-id="KBSWORLD" group-title="-",KBS WORLD
+http://77.137.40.221:8000/play/a02o
+#EXTINF:-1 tvg-id="KNESSET" group-title="-",KNESSET
+http://77.137.40.221:8000/play/a013
+#EXTINF:-1 tvg-id="KarbalaDocumentaryHD" group-title="-",Karbala Documentary HD
+http://77.137.40.221:8000/play/a04c
+#EXTINF:-1 tvg-id="LBCHD" group-title="-",LBC HD
+http://77.137.40.221:8000/play/a02y
+#EXTINF:-1 tvg-id="LBCInternational" group-title="-",LBC International
+http://77.137.40.221:8000/play/a01w
+#EXTINF:-1 tvg-id="LTV" group-title="-",LTV
+http://77.137.40.221:8000/play/a02p
+#EXTINF:-1 tvg-id="MAKAN" group-title="-",MAKAN
+http://77.137.40.221:8000/play/a00y
+#EXTINF:-1 tvg-id="MBC1" group-title="-",MBC 1
+http://77.137.40.221:8000/play/ld25
+#EXTINF:-1 tvg-id="MBC2" group-title="-",MBC 2
+http://77.137.40.221:8000/play/ld26
+#EXTINF:-1 tvg-id="MBC3" group-title="-",MBC 3
+http://77.137.40.221:8000/play/ld27
+#EXTINF:-1 tvg-id="MBC4" group-title="-",MBC 4
+http://77.137.40.221:8000/play/ld28
+#EXTINF:-1 tvg-id="MBCAction" group-title="-",MBC Action
+http://77.137.40.221:8000/play/ld2b
+#EXTINF:-1 tvg-id="MBCBollywood" group-title="-",MBC Bollywood
+http://77.137.40.221:8000/play/ld2a
+#EXTINF:-1 tvg-id="MBCDrama" group-title="-",MBC Drama
+http://77.137.40.221:8000/play/ld29
+#EXTINF:-1 tvg-id="MBCMAXHD" group-title="-",MBC MAX HD
+http://77.137.40.221:8000/play/ld1r
+#EXTINF:-1 tvg-id="MBCMasr2" group-title="-",MBC Masr 2
+http://77.137.40.221:8000/play/a02l
+#EXTINF:-1 tvg-id="MBCMasrHD" group-title="-",MBC Masr HD
+http://77.137.40.221:8000/play/ld2d
+#EXTINF:-1 tvg-id="MTVLebanonHD" group-title="-",MTV Lebanon HD
+http://77.137.40.221:8000/play/a01u
+#EXTINF:-1 tvg-id="MajdKidsTVHD" group-title="-",Majd Kids TV HD
+http://77.137.40.221:8000/play/a03e
+#EXTINF:-1 tvg-id="MasperoZaman" group-title="-",Maspero Zaman
+http://77.137.40.221:8000/play/a03s
+#EXTINF:-1 tvg-id="Mix" group-title="-",Mix
+http://77.137.40.221:8000/play/a059
+#EXTINF:-1 tvg-id="MixBelAraby" group-title="-",Mix Bel Araby
+http://77.137.40.221:8000/play/a02e
+#EXTINF:-1 tvg-id="MixOne" group-title="-",Mix One
+http://77.137.40.221:8000/play/a03u
+#EXTINF:-1 tvg-id="ModernMti" group-title="-",Modern Mti
+http://77.137.40.221:8000/play/a02j
+#EXTINF:-1 tvg-id="Mosar3a1" group-title="-",Mosar3a 1
+http://77.137.40.221:8000/play/a04m
+#EXTINF:-1 tvg-id="NBN" group-title="-",NBN
+http://77.137.40.221:8000/play/a01z
+#EXTINF:-1 tvg-id="NatGeoWildHD" group-title="-",Nat Geo Wild HD
+http://77.137.40.221:8000/play/a01t
+#EXTINF:-1 tvg-id="National_Geographic_HD" group-title="-",National_Geographic_HD
+http://77.137.40.221:8000/play/a00k
+#EXTINF:-1 tvg-id="NileCinema" group-title="-",Nile Cinema
+http://77.137.40.221:8000/play/c03r
+#EXTINF:-1 tvg-id="NileComedy" group-title="-",Nile Comedy
+http://77.137.40.221:8000/play/c03m
+#EXTINF:-1 tvg-id="NileDrama" group-title="-",Nile Drama
+http://77.137.40.221:8000/play/c03o
+#EXTINF:-1 tvg-id="NileLife" group-title="-",Nile Life
+http://77.137.40.221:8000/play/c03n
+#EXTINF:-1 tvg-id="NileNews" group-title="-",Nile News
+http://77.137.40.221:8000/play/c03l
+#EXTINF:-1 tvg-id="NileNewsHD" group-title="-",Nile News HD
+http://77.137.40.221:8000/play/c03q
+#EXTINF:-1 tvg-id="NileSport" group-title="-",Nile Sport
+http://77.137.40.221:8000/play/c03p
+#EXTINF:-1 tvg-id="NileTV" group-title="-",Nile TV
+http://77.137.40.221:8000/play/c033
+#EXTINF:-1 tvg-id="OSNMovies1HD" group-title="-",OSN Movies 1 HD
+http://77.137.40.221:8000/play/n01n
+#EXTINF:-1 tvg-id="OSNMovies2HD" group-title="-",OSN Movies 2 HD
+http://77.137.40.221:8000/play/n01o
+#EXTINF:-1 tvg-id="OTV" group-title="-",OTV
+http://77.137.40.221:8000/play/a01y
+#EXTINF:-1 tvg-id="One" group-title="-",One
+http://77.137.40.221:8000/play/a01v
+#EXTINF:-1 tvg-id="Palestine" group-title="-",Palestine
+http://77.137.40.221:8000/play/a02g
+#EXTINF:-1 tvg-id="PanoramaDrama" group-title="-",Panorama Drama
+http://77.137.40.221:8000/play/a035
+#EXTINF:-1 tvg-id="PanoramaDrama2" group-title="-",Panorama Drama 2
+http://77.137.40.221:8000/play/a036
+#EXTINF:-1 tvg-id="PanoramaFilm" group-title="-",Panorama Film
+http://77.137.40.221:8000/play/a037
+#EXTINF:-1 tvg-id="PanoramaFood" group-title="-",Panorama Food
+http://77.137.40.221:8000/play/a038
+#EXTINF:-1 tvg-id="RTARABICHD" group-title="-",RT ARABIC HD
+http://77.137.40.221:8000/play/a03z
+#EXTINF:-1 tvg-id="ReefAlyemen" group-title="-",Reef Alyemen
+http://77.137.40.221:8000/play/a04e
+#EXTINF:-1 tvg-id="RessalaHD" group-title="-",Ressala HD
+http://77.137.40.221:8000/play/a02z
+#EXTINF:-1 tvg-id="RotanaClassicHD" group-title="-",Rotana Classic HD
+http://77.137.40.221:8000/play/d02u
+#EXTINF:-1 tvg-id="RotanaClipHD" group-title="-",Rotana Clip HD
+http://77.137.40.221:8000/play/d030
+#EXTINF:-1 tvg-id="RotanaComedyHD" group-title="-",Rotana Comedy HD
+http://77.137.40.221:8000/play/d02t
+#EXTINF:-1 tvg-id="RotanaDramaHD" group-title="-",Rotana Drama HD
+http://77.137.40.221:8000/play/d02w
+#EXTINF:-1 tvg-id="RotanaKhalijeahHD" group-title="-",Rotana Khalijeah HD
+http://77.137.40.221:8000/play/d02v
+#EXTINF:-1 tvg-id="RotanaMusicHD" group-title="-",Rotana Music HD
+http://77.137.40.221:8000/play/d02x
+#EXTINF:-1 tvg-id="RotanaTarabJordan" group-title="-",Rotana Tarab Jordan
+http://77.137.40.221:8000/play/d041
+#EXTINF:-1 tvg-id="SAMADUBAIHD" group-title="-",SAMA DUBAI HD
+http://77.137.40.221:8000/play/k04v
+#EXTINF:-1 tvg-id="SPACETOONARABIC" group-title="-",SPACETOON ARABIC
+http://77.137.40.221:8000/play/a058
+#EXTINF:-1 tvg-id="SPORT1HD" group-title="-",SPORT 1 HD
+http://77.137.40.221:8000/play/k016
+#EXTINF:-1 tvg-id="SPORT2HD" group-title="-",SPORT 2 HD
+http://77.137.40.221:8000/play/k019
+#EXTINF:-1 tvg-id="SPORT3HD" group-title="-",SPORT 3 HD
+http://77.137.40.221:8000/play/k01a
+#EXTINF:-1 tvg-id="SPORT4HD" group-title="-",SPORT 4 HD
+http://77.137.40.221:8000/play/k01b
+#EXTINF:-1 tvg-id="SPORT5HD" group-title="-",SPORT 5 HD
+http://77.137.40.221:8000/play/k01c
+#EXTINF:-1 tvg-id="SPORT6HD" group-title="-",SPORT 6 HD
+http://77.137.40.221:8000/play/k03w
+#EXTINF:-1 tvg-id="SPORTONE2HD" group-title="-",SPORT ONE 2 HD
+http://77.137.40.221:8000/play/k01f
+#EXTINF:-1 tvg-id="SPORTONEHD" group-title="-",SPORT ONE HD
+http://77.137.40.221:8000/play/k01d
+#EXTINF:-1 tvg-id="SPORT5LIVEHD" group-title="-",SPORT5LIVEHD
+http://77.137.40.221:8000/play/k00i
+#EXTINF:-1 tvg-id="SPORT5PLUSHD" group-title="-",SPORT5PLUSHD
+http://77.137.40.221:8000/play/k001
+#EXTINF:-1 tvg-id="SYRIATVHD" group-title="-",SYRIA TV HD
+http://77.137.40.221:8000/play/a045
+#EXTINF:-1 tvg-id="SamiTV" group-title="-",SamiTV
+http://77.137.40.221:8000/play/a00n
+#EXTINF:-1 tvg-id="SawtAl-alam" group-title="-",Sawt Al-alam
+http://77.137.40.221:8000/play/a03x
+#EXTINF:-1 tvg-id="TOPZaman" group-title="-",TOP Zaman
+http://77.137.40.221:8000/play/a04g
+#EXTINF:-1 tvg-id="TRTArabiHD" group-title="-",TRT Arabi HD
+http://77.137.40.221:8000/play/a04d
+#EXTINF:-1 tvg-id="TeNTV" group-title="-",TeN TV
+http://77.137.40.221:8000/play/a03k
+#EXTINF:-1 tvg-id="TelelibanTV" group-title="-",Teleliban TV
+http://77.137.40.221:8000/play/a022
+#EXTINF:-1 tvg-id="TopDrama" group-title="-",Top Drama
+http://77.137.40.221:8000/play/a04f
+#EXTINF:-1 tvg-id="ToyorAljanah" group-title="-",Toyor Aljanah
+http://77.137.40.221:8000/play/a047
+#EXTINF:-1 tvg-id="YASSportsHD" group-title="-",YAS Sports HD
+http://77.137.40.221:8000/play/a03h
+#EXTINF:-1 tvg-id="YEMENSHABABHD" group-title="-",YEMEN SHABAB HD
+http://77.137.40.221:8000/play/a046
+#EXTINF:-1 tvg-id="ZADTV" group-title="-",ZAD TV
+http://77.137.40.221:8000/play/a02q
+#EXTINF:-1 tvg-id="ZEEAFLAM" group-title="-",ZEE AFLAM
+http://77.137.40.221:8000/play/a02m
+#EXTINF:-1 tvg-id="ZEEALWAN" group-title="-",ZEE ALWAN
+http://77.137.40.221:8000/play/a02n
