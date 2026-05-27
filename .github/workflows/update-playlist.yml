@@ -35,6 +35,7 @@ jobs:
         run: |
           python backup/get-playlist-ae.py
           python backup/get-playlist-in.py
+          python backup/get-playlist-in2.py
 
       # Gom cả 2 file vào chung 1 thư mục
       - name: Prepare Output Folder
@@ -51,6 +52,13 @@ jobs:
           if [ -f "playlist_in.m3u" ]; then
             mv playlist_in.m3u final_output/
             echo "✅ Gom file IN thành công!"
+          else
+            echo "⚠️ Không tìm thấy file IN!"
+          fi
+
+          if [ -f "playlist_in2.m3u" ]; then
+            mv playlist_in2.m3u final_output/
+            echo "✅ Gom file IN2 thành công!"
           else
             echo "⚠️ Không tìm thấy file IN!"
           fi
