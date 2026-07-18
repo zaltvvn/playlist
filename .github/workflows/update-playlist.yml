@@ -50,7 +50,7 @@ jobs:
           do
             mv "$file" final_output/
             echo "✅ $file"
-            ((count++))
+            count=$((count + 1))
           done
 
           echo ""
