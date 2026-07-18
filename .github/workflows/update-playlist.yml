@@ -2,78 +2,88 @@ name: Update All M3U Playlists
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
-  deploy-playlists:
+  update-playlists:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
       - name: Checkout Playlist Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Checkout Backup Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: zaltvvn/backup
           token: ${{ secrets.ENGINE_TOKEN }}
           path: backup
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests
-
-      # Chạy lần lượt cả 2 Script
-      - name: Run Scripts
         run: |
-          python backup/get-playlist-ae.py
-          python backup/get-playlist-in.py
-          python backup/get-playlist-in2.py
+          python -m pip install --upgrade pip
+          pip install requests
 
-      # Gom cả 2 file vào chung 1 thư mục
+      - name: Generate Playlists
+        run: |
+          python backup/get-playlist.py
+
       - name: Prepare Output Folder
+        shell: bash
         run: |
           mkdir -p final_output
-          
-          if [ -f "playlist_ae.m3u" ]; then
-            mv playlist_ae.m3u final_output/
-            echo "✅ Gom file AE thành công!"
-          else
-            echo "⚠️ Không tìm thấy file AE!"
-          fi
-          
-          if [ -f "playlist_in.m3u" ]; then
-            mv playlist_in.m3u final_output/
-            echo "✅ Gom file IN thành công!"
-          else
-            echo "⚠️ Không tìm thấy file IN!"
-          fi
 
-          if [ -f "playlist_in2.m3u" ]; then
-            mv playlist_in2.m3u final_output/
-            echo "✅ Gom file IN2 thành công!"
-          else
-            echo "⚠️ Không tìm thấy file IN!"
-          fi
+          shopt -s nullglob
 
-     # Bước mới: Lấy giờ VN (đã làm ở bước trước)
+          count=0
+
+          for file in playlist_*.m3u
+          do
+            mv "$file" final_output/
+            echo "✅ $file"
+            ((count++))
+          done
+
+          echo ""
+          echo "Total playlists: $count"
+          ls -lah final_output
+
       - name: Get Current Time
-        run: echo "TIME_NOW=$(TZ='Asia/Ho_Chi_Minh' date +'%d/%m %H:%M')" >> $GITHUB_ENV
-
-      # Bước Deploy thủ công: Thay thế hoàn toàn peaceiris/actions-gh-pages
-      - name: Manual Deploy to m3u Branch
         run: |
+          echo "TIME_NOW=$(TZ='Asia/Ho_Chi_Minh' date +'%d/%m %H:%M')" >> $GITHUB_ENV
+
+      - name: Deploy to m3u Branch
+        shell: bash
+        run: |
+          if [ -z "$(ls -A final_output)" ]; then
+            echo "Không có playlist nào để deploy."
+            exit 0
+          fi
+
           cd final_output
+
           git init
+          git checkout -b m3u
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add .
-          git commit -m "Auto Update: All Playlists - Cập nhật lúc ${{ env.TIME_NOW }}"
-          git push --force "https://x-access-token:${{ secrets.ENGINE_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:m3u
+
+          git commit -m "Auto Update: ${{ env.TIME_NOW }}" || {
+            echo "Không có thay đổi."
+            exit 0
+          }
+
+          git push --force \
+            "https://x-access-token:${{ secrets.ENGINE_TOKEN }}@github.com/${{ github.repository }}.git" \
+            m3u
